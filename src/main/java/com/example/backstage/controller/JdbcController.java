@@ -11,13 +11,13 @@ import java.util.Map;
 @RestController
 public class JdbcController {
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
+    // @Autowired
+    // private JdbcTemplate jdbcTemplate;
 
-    @GetMapping("/insert")
-    public String insert(String type, String name) {
-        String sql = "insert into jdbc_test(ds_type, ds_name) values(?, ?)";
-        jdbcTemplate.update(sql, type, name);
-        return "success insert";
-    }
+    // @GetMapping("/insert")
+    // public String insert(String type, String name) {
+    //     String sql = "insert into jdbc_test(ds_type, ds_name) values(?, ?)";
+    //     jdbcTemplate.update(sql, type, name);
+    //     return "success insert";
+    // }
 }
